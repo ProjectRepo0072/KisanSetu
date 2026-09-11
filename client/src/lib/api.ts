@@ -1,4 +1,4 @@
-const BASE = "/api";
+const BASE = import.meta.env.VITE_API_URL || "/api";
 
 // NOTE (M6, offline/notifications scope): the two additions below are the
 // minimal hook needed to surface offline behavior in the UI without every
