@@ -1,0 +1,31 @@
+// Approximate road distances (km) between district hubs, hand-entered from
+// public road-distance references for prototype purposes. Real deployments
+// would replace this with a routing API — see README "future scalability".
+export const DISTRICT_DISTANCES = {
+  _sameDistrictKm: 25,
+  "Nashik|Ahilyanagar": 115,
+  "Nashik|Pune": 210,
+  "Nashik|Aurangabad": 180,
+  "Nashik|Dhule": 95,
+  "Nashik|Jalgaon": 155,
+  "Ahilyanagar|Pune": 120,
+  "Ahilyanagar|Solapur": 200,
+  "Ahilyanagar|Aurangabad": 115,
+  "Pune|Solapur": 250,
+  "Pune|Sangli": 230,
+  "Pune|Kolhapur": 235,
+  "Pune|Satara": 110,
+  "Pune|Aurangabad": 235,
+  "Solapur|Sangli": 165,
+  "Solapur|Kolhapur": 220,
+  "Sangli|Kolhapur": 55,
+  "Sangli|Satara": 95,
+  "Kolhapur|Satara": 120,
+  "Nagpur|Amravati": 155,
+  "Nagpur|Wardha": 75,
+  "Nagpur|Chandrapur": 155,
+  "Amravati|Akola": 90,
+  "Aurangabad|Jalna": 60,
+  "Aurangabad|Nagpur": 495,
+  "Nashik|Nagpur": 605,
+};
