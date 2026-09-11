@@ -63,7 +63,11 @@ function LanguageSwitcher({ compact = false }: { compact?: boolean }) {
       {open && (
         <>
           <div className="fixed inset-0 z-10" onClick={() => setOpen(false)} />
-          <div className="absolute z-20 bottom-full mb-1 right-0 bg-white border border-stone-200 rounded-md shadow-md py-1 min-w-[120px]">
+          <div
+            className={`absolute z-20 right-0 bg-white border border-stone-200 rounded-md shadow-md py-1 min-w-[120px] ${
+              compact ? "top-full mt-1" : "bottom-full mb-1"
+            }`}
+          >
             {LOCALES.map((l) => (
               <button
                 key={l.code}
